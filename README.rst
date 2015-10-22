@@ -1,6 +1,12 @@
 Cookie Cut a Python Package
 ===========================
 
+::
+
+    $ pip install cookiecutter
+    $ cookiecutter gh:smn/cookiecutter-python-package
+
+
 Includes:
 
 1. Sphinx
