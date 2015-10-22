@@ -1,0 +1,12 @@
+{
+	"author": "Praekelt Foundation",
+	"author_email": "dev@praekeltfoundation.org",
+	"github_username": "praekelt",
+	"project_name": "Python Project",
+	"package_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+	"project_short_description": "This is the {{cookiecutter.project_name}} project.",
+	"project_url": "https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.package_name}}",
+	"license": "BSD",
+	"pypi_username": "Praekelt",
+	"version": "0.1.0"
+}
