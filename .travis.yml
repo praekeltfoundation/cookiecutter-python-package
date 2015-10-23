@@ -11,9 +11,8 @@ install:
   - pip install cookiecutter
 
 script:
-  - pwd
-  - cookiecutter gh:praekelt/cookiecutter-python-package --no-input -o `pwd`
-  - ls `pwd`/python_project
-  - cd `pwd`/python_project && flake8
-  - cd `pwd`/python_project && pip install -e .
-  - cd `pwd`/python_project && py.test
+  - cookiecutter gh:praekelt/cookiecutter-python-package --no-input
+  - cd python_project
+  - flake8
+  - pip install -e .
+  - py.test
