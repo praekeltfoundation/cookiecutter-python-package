@@ -16,6 +16,7 @@ install:
   - pip install -e .
 
 script:
+  - flake8 {{cookiecutter.package_name}}
   - py.test --cov={{cookiecutter.package_name}} --cov-report=term
 
 after_success:
