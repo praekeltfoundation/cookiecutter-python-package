@@ -13,6 +13,7 @@ install:
 script:
   - pwd
   - cookiecutter gh:praekelt/cookiecutter-python-package --no-input -o `pwd`
+  - ls `pwd`/python_project
   - cd `pwd`/python_project && flake8
   - cd `pwd`/python_project && pip install -e .
   - cd `pwd`/python_project && py.test
