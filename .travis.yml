@@ -15,4 +15,7 @@ script:
   - cd python_project
   - flake8
   - pip install -e .
+  - pip install -r requirements-dev.txt
   - py.test
+  - cd docs
+  - make html
