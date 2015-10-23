@@ -7,10 +7,12 @@ cache:
     - $HOME/.pip-cache/
 
 install:
+  - pip install flake8
   - pip install cookiecutter
 
 script:
-  - cookiecutter gh:praekelt/cookiecutter-python-package --no-input
-  - cd python_project && flake8
-  - cd python_project && pip install -e .
-  - cd python_project && py.test 
+  - pwd
+  - cookiecutter gh:praekelt/cookiecutter-python-package --no-input -o `pwd`
+  - cd `pwd`/python_project && flake8
+  - cd `pwd`/python_project && pip install -e .
+  - cd `pwd`/python_project && py.test
