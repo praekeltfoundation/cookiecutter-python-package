@@ -1,0 +1,16 @@
+sudo: false
+language: python
+python:
+  - "2.7"
+cache:
+  directories:
+    - $HOME/.pip-cache/
+
+install:
+  - pip install cookiecutter
+
+script:
+  - cookiecutter gh:praekelt/cookiecutter-python-package --no-input
+  - cd python_project && flake8
+  - cd python_project && pip install -e .
+  - cd python_project && py.test 
