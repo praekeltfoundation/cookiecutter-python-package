@@ -4,7 +4,7 @@ Cookie Cut a Python Package
 ::
 
     $ pip install cookiecutter
-    $ cookiecutter gh:smn/cookiecutter-python-package
+    $ cookiecutter gh:praekelt/cookiecutter-python-package
 
 
 Includes:
